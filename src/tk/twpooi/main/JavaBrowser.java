@@ -1,12 +1,4 @@
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.net.MalformedURLException;
-import java.net.Socket;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
+package tk.twpooi.main;
 
 
 import javax.swing.*;
@@ -24,7 +16,7 @@ public class JavaBrowser {
     public static void main(String[] args){
         // TODO Auto-generated method stub
 
-//        WebBrowser webBrowser = new WebBrowser.RequestBuilder("gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html").build();
+//        tk.twpooi.main.WebBrowser webBrowser = new tk.twpooi.main.WebBrowser.RequestBuilder("gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html").build();
         WebBrowser webBrowser = new WebBrowser.RequestBuilder("nearby.cf").build();
 
         if(webBrowser.connect()){
